@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HRM System - Printamax
 
-## Getting Started
+El **HRM System** es una aplicación web de gestión de recursos humanos desarrollada con **React** y **Tailwind CSS**, utilizando **Node.js** para la visualización. Permite a los usuarios gestionar funciones clave relacionadas con la administración de empleados, incluyendo la gestión de vacaciones, la contratación de candidatos y la creación de perfiles de empleados. Este sistema está diseñado para ser utilizado por diferentes roles dentro de la organización, como trabajadores, especialistas en recursos humanos y gerentes de recursos humanos.
 
-First, run the development server:
+## Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **React**: Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas y dinámicas.
+- **Tailwind CSS**: Framework de diseño CSS que facilita la creación de interfaces de usuario personalizadas y atractivas mediante clases de utilidad.
+- **Lucide Icons**: Biblioteca de íconos que se utiliza para representar funciones clave dentro de la aplicación, como el acceso a perfiles y la gestión de vacaciones.
+- **React State Management**: Utilización de `useState` para gestionar el estado de la aplicación, como la autenticación de usuarios y la navegación entre módulos.
+- **Node.js**: Entorno de ejecución de JavaScript que se utiliza para el servidor y la visualización de la aplicación en el navegador.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Funcionalidades
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Autenticación y Roles de Usuario
+- Los usuarios pueden ingresar con un correo electrónico y contraseña.
+- Tres roles de usuario disponibles:
+  - **Trabajador**: Acceso a la gestión de vacaciones y soporte.
+  - **Especialista en Recursos Humanos**: Acceso a la gestión de candidatos, creación de perfiles de empleados y gestión de vacaciones.
+  - **Gerente de Recursos Humanos**: Acceso a la gestión de vacaciones, gestión de perfiles y soporte.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Módulos Disponibles
+- **Gestión de Vacaciones**: Los usuarios pueden solicitar y gestionar días de vacaciones.
+- **Gestión de Candidatos**: Los especialistas en recursos humanos pueden gestionar la contratación de candidatos.
+- **Soporte (Chatbot)**: Acceso a soporte interactivo mediante un chatbot.
+- **Gestión de Perfiles**: Los gerentes de recursos humanos pueden gestionar y actualizar los perfiles de los empleados.
+- **Creación de Perfil de Empleado**: Los especialistas pueden crear y gestionar perfiles de nuevos empleados.
 
-## Learn More
+## Instalación
 
-To learn more about Next.js, take a look at the following resources:
+1. Clona este repositorio en tu máquina local:
+   git clone https://github.com/JeremyParada/HRM-demo-Printamax.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Navega al directorio del proyecto:
+    cd hrm-system
+3. Instala las dependencias:
+    npm install
+4. Inicia el servidor de desarrollo con Node.js:
+    npm start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Esto abrirá la aplicación en http://localhost:3000.
