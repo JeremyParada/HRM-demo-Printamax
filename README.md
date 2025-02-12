@@ -35,7 +35,7 @@ El **HRM System** es una aplicación web de gestión de recursos humanos desarro
     cd hrm-system
 3. Instala las dependencias:
     npm install
-4. Inicia el servidor de desarrollo con Node.js:
-    npm start
+4. Inicia el servidor de desarrollo con Node.js y Next.js:
+    npm run dev
 
 Esto abrirá la aplicación en http://localhost:3000.
